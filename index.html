@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Izumi Restaurant & Lounge — Kampala</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g class="logo-spikes">
+          <line x1="60" y1="38" x2="60" y2="4" stroke="#c9a96e" stroke-width="1.5"/>
+          <line x1="52" y1="38" x2="52" y2="10" stroke="#c9a96e" stroke-width="1.3"/>
+          <line x1="68" y1="38" x2="68" y2="10" stroke="#c9a96e" stroke-width="1.3"/>
+          <line x1="44" y1="38" x2="44" y2="16" stroke="#c9a96e" stroke-width="1.1"/>
+          <line x1="76" y1="38" x2="76" y2="16" stroke="#c9a96e" stroke-width="1.1"/>
+          <line x1="36" y1="38" x2="36" y2="22" stroke="#c9a96e" stroke-width="1"/>
+          <line x1="84" y1="38" x2="84" y2="22" stroke="#c9a96e" stroke-width="1"/>
+          <line x1="28" y1="38" x2="28" y2="28" stroke="#c9a96e" stroke-width="0.9"/>
+          <line x1="92" y1="38" x2="92" y2="28" stroke="#c9a96e" stroke-width="0.9"/>
+        </g>
+        <line x1="22" y1="39" x2="98" y2="39" stroke="#c9a96e" stroke-width="0.8"/>
+        <text x="60" y="52" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" letter-spacing="5" fill="#c9a96e">IZUMI</text>
+      </svg>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Reserve a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#menu" class="mob-link">Menu</a></li>
+      <li><a href="#gallery" class="mob-link">Gallery</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+      <li><a href="#contact" class="mob-link mob-cta">Reserve a Table</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pre reveal">Pan-Asian Restaurant & Lounge · Kololo, Kampala</p>
+      <h1 class="hero-title reveal">
+        <span>Where East</span>
+        <em>meets</em>
+        <span>Kampala</span>
+      </h1>
+      <p class="hero-sub reveal">Uganda's only Pan-Asian dining destination.<br>Sushi · Thai · Japanese · Dim Sum · Cocktails</p>
+      <div class="hero-actions reveal">
+        <a href="#menu" class="btn-primary">Explore the Menu</a>
+        <a href="#contact" class="btn-ghost">Book a Table</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-image-wrap">
+        <div class="about-img-placeholder">
+          <div class="img-inner">
+            <svg viewBox="0 0 160 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-logo-svg">
+              <g opacity="0.25">
+                <line x1="80" y1="80" x2="80" y2="4" stroke="#c9a96e" stroke-width="3"/>
+                <line x1="66" y1="80" x2="66" y2="18" stroke="#c9a96e" stroke-width="2.5"/>
+                <line x1="94" y1="80" x2="94" y2="18" stroke="#c9a96e" stroke-width="2.5"/>
+                <line x1="52" y1="80" x2="52" y2="32" stroke="#c9a96e" stroke-width="2"/>
+                <line x1="108" y1="80" x2="108" y2="32" stroke="#c9a96e" stroke-width="2"/>
+                <line x1="38" y1="80" x2="38" y2="46" stroke="#c9a96e" stroke-width="1.8"/>
+                <line x1="122" y1="80" x2="122" y2="46" stroke="#c9a96e" stroke-width="1.8"/>
+                <line x1="24" y1="80" x2="24" y2="60" stroke="#c9a96e" stroke-width="1.5"/>
+                <line x1="136" y1="80" x2="136" y2="60" stroke="#c9a96e" stroke-width="1.5"/>
+              </g>
+              <line x1="16" y1="83" x2="144" y2="83" stroke="#c9a96e" stroke-width="1" opacity="0.25"/>
+              <text x="80" y="115" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="22" font-weight="500" letter-spacing="8" fill="#c9a96e" opacity="0.4">IZUMI</text>
+              <text x="80" y="130" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="8" font-weight="300" letter-spacing="3" fill="#7a6340" opacity="0.5">RESTAURANT &amp; LOUNGE</text>
+            </svg>
+          </div>
+        </div>
+        <div class="about-badge">Est. Kampala, Uganda</div>
+      </div>
+      <div class="about-text">
+        <p class="section-label reveal">Our Story</p>
+        <h2 class="reveal">A Culinary<br><em>Oasis</em> in the Heart<br>of Kololo</h2>
+        <p class="reveal">"Izumi" is a Japanese word meaning <em style="color:var(--gold)">'Spring'</em> or <em style="color:var(--gold)">'Fountain'</em>. It is believed in many cultures that water has a powerful energy to provide the perfect balance in a place — hence our choice of name.</p>
+        <p class="reveal">At Izumi we serve food as we believe it should be. We value our customers and hope to see you leave here each time smiling, only to be thinking when to return.</p>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <span class="stat-num">#1</span>
+            <span class="stat-label">Pan-Asian in Uganda</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">200+</span>
+            <span class="stat-label">Dishes on the Menu</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">Kololo</span>
+            <span class="stat-label">Kampala's finest address</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="section-header">
+      <p class="section-label reveal">Culinary Journey</p>
+      <h2 class="reveal">The Menu</h2>
+      <p class="section-sub reveal">From delicate sushi and sashimi to bold Thai curries, signature cocktails and fine wines — every dish crafted with intention.</p>
+    </div>
+
+    <!-- CATEGORY TABS -->
+    <div class="menu-tabs reveal" id="menuTabs">
+      <button class="tab-btn active" data-tab="sushi">Sushi & Sashimi</button>
+      <button class="tab-btn" data-tab="dimsum">Dim Sum</button>
+      <button class="tab-btn" data-tab="appetizers">Appetizers</button>
+      <button class="tab-btn" data-tab="mains">Mains</button>
+      <button class="tab-btn" data-tab="dessert">Dessert</button>
+      <button class="tab-btn" data-tab="cocktails">Cocktails</button>
+      <button class="tab-btn" data-tab="wine">Wine & Spirits</button>
+      <button class="tab-btn" data-tab="softs">Soft Drinks</button>
+    </div>
+
+    <div class="menu-content" id="menuContent">
+
+      <!-- SUSHI & SASHIMI -->
+      <div class="menu-section active" data-section="sushi">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Sushi — Vegetarian <span class="pieces">(8 pcs)</span></h3>
+            <ul class="menu-list">
+              <li><span>Vegetable Tempura</span><span>35,000/-</span></li>
+              <li><span>Mushroom Teriyaki</span><span>35,000/-</span></li>
+              <li><span>Cucumber / Avocado Maki</span><span>30,000/-</span></li>
+              <li><span>Black Bean Brocolli</span><span>35,000/-</span></li>
+              <li><span>Crackled Spinach & Tofu</span><span>35,000/-</span></li>
+              <li><span>Spicy Mango</span><span>35,000/-</span></li>
+              <li><span>Jalapeno Popper</span><span>35,000/-</span></li>
+              <li><span>Avocado Wakame</span><span>35,000/-</span></li>
+              <li><span>Spicy Tofu Roll</span><span>35,000/-</span></li>
+              <li><span>Fresh Green Maki</span><span>35,000/-</span></li>
+              <li><span>Thai Spicy Veg Sushi</span><span>35,000/-</span></li>
+              <li><span>Tamago Egg</span><span>35,000/-</span></li>
+              <li><span>Crispy Brocoli Maki</span><span>35,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Sushi — Non-Veg <span class="pieces">(8 pcs)</span></h3>
+            <ul class="menu-list">
+              <li><span>Tuna / Spicy</span><span>50,000/-</span></li>
+              <li><span>Salmon Avocado</span><span>55,000/-</span></li>
+              <li><span>California / Spicy</span><span>50,000/-</span></li>
+              <li><span>Yellow Fin Tuna & Jalapeno</span><span>50,000/-</span></li>
+              <li><span>Spicy Prawn Tempura Roll</span><span>50,000/-</span></li>
+              <li><span>Tuna & Truffle</span><span>50,000/-</span></li>
+              <li><span>Maki — Tuna / Salmon</span><span>50,000/-</span></li>
+              <li><span>Mango & Prawn</span><span>50,000/-</span></li>
+              <li><span>Dragon</span><span>50,000/-</span></li>
+              <li><span>Classic Onagi Roll</span><span>55,000/-</span></li>
+              <li><span>Dynamite — Tuna / Prawn</span><span>50,000/-</span></li>
+              <li><span>Chicken Crispy Roll</span><span>48,000/-</span></li>
+              <li><span>Thai Spicy Chicken Sushi</span><span>48,000/-</span></li>
+              <li><span>Spicy Burnt Salmon Roll</span><span>55,000/-</span></li>
+              <li><span>Burnt Tuna / Spicy</span><span>50,000/-</span></li>
+              <li><span>Spicy Thai Prawns</span><span>50,000/-</span></li>
+              <li><span>Burnt Snapper Maki</span><span>55,000/-</span></li>
+              <li><span>Prawn Popper Maki</span><span>50,000/-</span></li>
+            </ul>
+          </div>
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Sashimi</h3>
+            <ul class="menu-list">
+              <li><span>Tuna Tataki</span><span>65,000/-</span></li>
+              <li><span>Snapper Sashimi</span><span>95,000/-</span></li>
+              <li><span>Fresh Salmon</span><span>95,000/-</span></li>
+              <li><span>Fresh Salmon Thai Sashimi</span><span>95,000/-</span></li>
+              <li class="menu-item-note"><span>Sashimi Platter — Small</span><span>70,000/-</span></li>
+              <li class="menu-item-note"><span>Sashimi Platter — Medium</span><span>100,000/-</span></li>
+              <li class="menu-item-note"><span>Sashimi Platter — Large</span><span>130,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Nigiri <span class="pieces">(2 pcs)</span></h3>
+            <ul class="menu-list">
+              <li><span>Snapper</span><span>25,000/-</span></li>
+              <li><span>Tamago</span><span>20,000/-</span></li>
+              <li><span>Salmon</span><span>25,000/-</span></li>
+              <li><span>Tuna</span><span>25,000/-</span></li>
+              <li><span>Prawn</span><span>25,000/-</span></li>
+              <li><span>Squid</span><span>25,000/-</span></li>
+              <li><span>Ikura Salmon Egg</span><span>40,000/-</span></li>
+              <li><span>Tobiko</span><span>40,000/-</span></li>
+              <li class="menu-item-note"><span>Nigiri Platter — Small</span><span>50,000/-</span></li>
+              <li class="menu-item-note"><span>Nigiri Platter — Medium</span><span>70,000/-</span></li>
+              <li class="menu-item-note"><span>Nigiri Platter — Large</span><span>100,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Poke Bowls</h3>
+            <ul class="menu-list">
+              <li><span>Salmon</span><span>90,000/-</span></li>
+              <li><span>Tuna</span><span>75,000/-</span></li>
+              <li><span>Mixed Fish</span><span>85,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Japanese Salad</h3>
+            <ul class="menu-list">
+              <li><span>Wakame</span><span>40,000/-</span></li>
+              <li><span>Tuna</span><span>55,000/-</span></li>
+              <li><span>Salmon</span><span>65,000/-</span></li>
+              <li><span>Sea Food</span><span>75,000/-</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIM SUM -->
+      <div class="menu-section" data-section="dimsum">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Vegetarian</h3>
+            <ul class="menu-list">
+              <li><span>Ginger Spinach and Mushroom</span><span>28,000/-</span></li>
+              <li><span>Steamed Garlic Greens</span><span>28,000/-</span></li>
+              <li><span>Edamame, Truffle and Tofu</span><span>28,000/-</span></li>
+              <li><span>Brocolli & Cashewnut</span><span>28,000/-</span></li>
+              <li><span>Vegetable Bao</span><span>35,000/-</span></li>
+              <li><span>Veg Gyoza</span><span>30,000/-</span></li>
+              <li><span>Panfried Ricepaper Dumpling</span><span>30,000/-</span></li>
+              <li><span>Spicy Szechuan Dumpling</span><span>30,000/-</span></li>
+            </ul>
+          </div>
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Non-Vegetarian</h3>
+            <ul class="menu-list">
+              <li><span>Prawn, Chive & Garlic</span><span>40,000/-</span></li>
+              <li><span>Thai Lemongrass Shrimp</span><span>40,000/-</span></li>
+              <li><span>Steamed Pork Dimsum</span><span>35,000/-</span></li>
+              <li><span>Spicy Lemon Chicken</span><span>35,000/-</span></li>
+              <li><span>Rice Pepper Chicken Dumpling</span><span>38,000/-</span></li>
+              <li><span>BAO — Pork / Chicken</span><span>42,000/-</span></li>
+              <li><span>GYOZA — Chicken / Pork</span><span>36,000/-</span></li>
+              <li><span>Spicy Szechuan Dumpling Chicken</span><span>35,000/-</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- APPETIZERS -->
+      <div class="menu-section" data-section="appetizers">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Appetizers</h3>
+            <ul class="menu-list">
+              <li><span>Thai Spring Rolls — Veg / Chicken / Shrimp</span><span>18,000 – 40,000/-</span></li>
+              <li><span>Fresh Summer Roll — Veg / Shrimp</span><span>40,000/-</span></li>
+              <li><span>Edamame — Spicy / Garlic / Truffle</span><span>35,000/-</span></li>
+              <li><span>Cashewnut — Tomyum / Garlic</span><span>35,000/-</span></li>
+              <li><span>Prawn Crackers</span><span>25,000/-</span></li>
+              <li><span>Wasabi / Dynamite Prawns</span><span>55,000/-</span></li>
+              <li><span>Crispy Prawns Tempura</span><span>70,000/-</span></li>
+              <li><span>Furai Breadcrumb Prawns</span><span>70,000/-</span></li>
+              <li><span>Spicy Thai Fish</span><span>45,000/-</span></li>
+              <li><span>Fish Tempura</span><span>45,000/-</span></li>
+              <li><span>Ginger Chicken Wings</span><span>30,000/-</span></li>
+              <li><span>Charsui Chicken with Pancake</span><span>65,000/-</span></li>
+              <li><span>Honey Sesame Spare Ribs</span><span>40,000/-</span></li>
+              <li><span>Chilly Garlic Spare Ribs</span><span>40,000/-</span></li>
+              <li><span>Wantons — Veg / Chicken</span><span>30,000 – 35,000/-</span></li>
+              <li><span>Veg Tempura</span><span>45,000/-</span></li>
+              <li><span>Rock Corn Tempura</span><span>28,000/-</span></li>
+              <li><span>Nasu Miso Aubergine</span><span>28,000/-</span></li>
+              <li><span>Crispy Corn with Cashewnuts</span><span>35,000/-</span></li>
+              <li><span>Salt & Pepper — Brocolli / Tofu</span><span>30,000/-</span></li>
+              <li><span>Agadashi Tofu</span><span>35,000/-</span></li>
+              <li><span>Okonomiyaki Pancake</span><span>30,000/-</span></li>
+              <li><span>Mock Duck with Pancakes</span><span>65,000/-</span></li>
+              <li><span>Crispy Hot Thai Chicken</span><span>45,000/-</span></li>
+              <li><span>Honey Sesame Lotus Root</span><span>45,000/-</span></li>
+            </ul>
+          </div>
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Salads</h3>
+            <ul class="menu-list">
+              <li><span>Som Tom Papaya Salad — Veg / Shrimp</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Laab — Chicken / Pork</span><span>40,000/-</span></li>
+              <li><span>Wakame Japanese Salad</span><span>40,000/-</span></li>
+              <li><span>Nam Tok — Beef / Pork</span><span>40,000/-</span></li>
+              <li><span>Grilled Beef Salad</span><span>40,000/-</span></li>
+              <li><span>Glass Noodle Salad — Veg / Chicken</span><span>28,000 – 30,000/-</span></li>
+              <li><span>Thai Mango Salad</span><span>30,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Soups</h3>
+            <ul class="menu-list">
+              <li><span>Tom Yum — Veg / Chicken / Shrimp</span><span>30,000 – 50,000/-</span></li>
+              <li><span>Tom Kha — Veg / Chicken</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Dumpling Soup — Veg / Chicken / Shrimp</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Ramen Noodle Soup Miso</span><span>40,000 – 65,000/-</span></li>
+              <li><span>Spicy Ramen Soup — Veg / Pork</span><span>40,000 – 50,000/-</span></li>
+              <li><span>Japanese Noodles Soup — Veg / Chicken</span><span>40,000 – 50,000/-</span></li>
+              <li><span>Soba Noodle Soup — Veg / Chicken</span><span>40,000 – 50,000/-</span></li>
+              <li><span>Sweet Corn — Veg / Chicken</span><span>20,000 – 25,000/-</span></li>
+              <li><span>Hot & Sour Soup — Veg / Chicken</span><span>20,000 – 25,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Grills</h3>
+            <ul class="menu-list">
+              <li><span>Thai Roasted Chicken</span><span>40,000/-</span></li>
+              <li><span>Chicken Yakitori</span><span>40,000/-</span></li>
+              <li><span>Satay — Tofu / Chicken / Pork / Beef</span><span>30,000 – 35,000/-</span></li>
+              <li><span>Thai Grilled — Pork / Prawns</span><span>45,000 – 75,000/-</span></li>
+              <li><span>Seafood Platter (Tuna, Salmon, Prawns)</span><span>130,000/-</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS -->
+      <div class="menu-section" data-section="mains">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Mains — Curries & Stir-Fries</h3>
+            <ul class="menu-list">
+              <li><span>Dry Curry Prawns</span><span>75,000/-</span></li>
+              <li><span>Spicy Lemon Prawns</span><span>75,000/-</span></li>
+              <li><span>Singapore Chili Prawn Curry</span><span>75,000/-</span></li>
+              <li><span>Steam Prawns with Garlic Sauce</span><span>75,000/-</span></li>
+              <li><span>Thai Spicy Prawns</span><span>75,000/-</span></li>
+              <li><span>Tamarind Prawns</span><span>75,000/-</span></li>
+              <li><span>Thai Red Curry — Veg/Chicken/Beef/Prawns</span><span>40,000 – 75,000/-</span></li>
+              <li><span>Thai Green Curry — Veg/Chicken/Prawn</span><span>40,000 – 75,000/-</span></li>
+              <li><span>Thai Panang Curry — Veg/Chicken/Beef/Pork</span><span>40,000 – 45,000/-</span></li>
+              <li><span>Thai Massaman Curry — Veg/Chicken/Beef/Pork</span><span>40,000 – 45,000/-</span></li>
+              <li><span>Spicy Minced Chicken / Pork</span><span>48,000/-</span></li>
+              <li><span>Chicken / Pork with Black Mushrooms</span><span>45,000/-</span></li>
+              <li><span>Cashewnut — Veg/Chicken/Beef/Tofu</span><span>40,000 – 45,000/-</span></li>
+              <li><span>Shredded Chicken with Pickled Chilli</span><span>45,000/-</span></li>
+              <li><span>Spicy Ginger Chicken</span><span>45,000/-</span></li>
+              <li><span>Pineapple — Chicken / Beef / Pork</span><span>45,000/-</span></li>
+              <li><span>Crispy Thai Fried Chicken</span><span>45,000/-</span></li>
+              <li><span>Japanese Curry — Veg / Chicken</span><span>40,000 – 45,000/-</span></li>
+              <li><span>Japanese Katsu — Chicken/Beef/Fish</span><span>45,000/-</span></li>
+              <li><span>Teriyaki — Chicken / Beef / Salmon</span><span>45,000 – 95,000/-</span></li>
+              <li><span>Shogayaki — Beef / Pork</span><span>45,000/-</span></li>
+              <li><span>Crispy Ginger Honey Beef</span><span>45,000/-</span></li>
+              <li><span>Asian Style Mushroom</span><span>38,000/-</span></li>
+              <li><span>Chilli Tofu with Eggplant</span><span>40,000/-</span></li>
+              <li><span>Stir Fry Ginger Brocolli</span><span>35,000/-</span></li>
+              <li><span>Thai Spicy Squid</span><span>60,000/-</span></li>
+              <li><span>Three Flavor Fish</span><span>45,000/-</span></li>
+              <li><span>Steam Fish with Brocolli</span><span>50,000/-</span></li>
+              <li><span>Steam Lime Fish (Whole/Fillet)</span><span>50,000/-</span></li>
+              <li><span>Sichuan Fish</span><span>45,000/-</span></li>
+              <li><span>Crispy Fried Whole Tamarind Fish</span><span>45,000/-</span></li>
+            </ul>
+          </div>
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Mains — Fish & Stir-Fry</h3>
+            <ul class="menu-list">
+              <li><span>Grilled Snapper with Ponzu Sauce</span><span>85,000/-</span></li>
+              <li><span>Spicy Fried Turmeric Fish</span><span>45,000/-</span></li>
+              <li><span>Black Pepper Crusted Fish</span><span>50,000/-</span></li>
+              <li><span>Stir Fried Basil — Veg/Tofu/Chicken/Pork/Fish</span><span>40,000 – 45,000/-</span></li>
+              <li><span>Shredded Tofu in Pickled Chilli</span><span>40,000/-</span></li>
+              <li><span>Chilli Garlic Veggies with Cashewnuts</span><span>35,000/-</span></li>
+              <li><span>Green Beans with Cashewnuts</span><span>35,000/-</span></li>
+              <li><span>Stir-Fry Stem Lettuce</span><span>35,000/-</span></li>
+              <li><span>Garlic Sprouts</span><span>35,000/-</span></li>
+              <li><span>Dry Curry Mushrooms</span><span>38,000/-</span></li>
+              <li><span>Spicy Chicken / Pork with Dry Chilli</span><span>45,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Japanese Steaks</h3>
+            <ul class="menu-list">
+              <li><span>Wasabi Pepper</span><span>70,000/-</span></li>
+              <li><span>Red Chili, Sesame & Sweet Soy</span><span>70,000/-</span></li>
+              <li><span>Lemongrass</span><span>70,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Rice & Noodles</h3>
+            <ul class="menu-list">
+              <li><span>Pad Thai Noodles — Veg/Chicken/Shrimp</span><span>35,000 – 50,000/-</span></li>
+              <li><span>Udon Noodles — Veg / Chicken</span><span>40,000 – 50,000/-</span></li>
+              <li><span>Soba Noodles — Veg/Beef/Chicken</span><span>35,000 – 40,000/-</span></li>
+              <li><span>Glass Noodles — Veg / Chicken</span><span>35,000 – 40,000/-</span></li>
+              <li><span>Fried Noodles — Veg/Chicken/Beef/Pork</span><span>25,000 – 30,000/-</span></li>
+              <li><span>Thai Sukiyaki Noodles — Veg / Egg / Chicken</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Steamed Rice</span><span>15,000/-</span></li>
+              <li><span>Sticky Rice</span><span>20,000/-</span></li>
+              <li><span>Fried Rice — Veg/Egg/Chicken/Shrimp</span><span>25,000 – 40,000/-</span></li>
+              <li><span>Burnt Garlic Fried Rice</span><span>25,000/-</span></li>
+              <li><span>Sesame Fried Rice</span><span>25,000/-</span></li>
+              <li><span>Mushroom Fried Rice</span><span>25,000/-</span></li>
+              <li><span>Pineapple Fried Rice — Veg/Chicken/Shrimp</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Nasi Goreng — Veg/Egg/Chicken/Shrimp</span><span>30,000 – 45,000/-</span></li>
+              <li><span>Green Curry Rice — Veg / Chicken</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Donburi Katsu — Pork / Beef / Chicken</span><span>45,000/-</span></li>
+              <li><span>Guydon — Beef</span><span>45,000/-</span></li>
+              <li><span>Oyakodon — Chicken</span><span>45,000/-</span></li>
+              <li><span>Ten Don — Prawn</span><span>65,000/-</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERT -->
+      <div class="menu-section" data-section="dessert">
+        <div class="menu-cols menu-cols-center">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Desserts</h3>
+            <ul class="menu-list">
+              <li><span>Classic Chocolate Fudge Cake <span class="note">served with vanilla ice cream</span></span><span>28,000/-</span></li>
+              <li><span>Fresh Fruits Platter</span><span>32,000/-</span></li>
+              <li><span>Fresh Mango with Sticky Rice and Coconut Custard <span class="note">popular Thai dessert</span></span><span>28,000/-</span></li>
+              <li><span>Dark Chocolate Mousse <span class="note">must try for chocolate lovers</span></span><span>28,000/-</span></li>
+              <li><span>Coconut Milk Cake <span class="note">a must for coconut lovers</span></span><span>28,000/-</span></li>
+              <li><span>Ice Cream — Vanilla / Chocolate / Strawberry</span><span>10,000/- per scoop</span></li>
+              <li><span>Home Made Ice Cream — Jasmine Tea / Sesame / Mango Lime / Coconut</span><span>15,000/- per scoop</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- COCKTAILS -->
+      <div class="menu-section" data-section="cocktails">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Signature Cocktails — 30,000/-</h3>
+            <ul class="menu-list">
+              <li><span>Gin Twist <span class="note">Gin, cranberry juice & black pepper</span></span></li>
+              <li><span>Ginger Berry <span class="note">Whiskey, Campari, cranberry, Orange & apple juice</span></span></li>
+              <li><span>Drunk Guava <span class="note">Rum, fresh ginger & guava juice</span></span></li>
+              <li><span>Litchi Magic <span class="note">Tequila, southern comfort, lime & litchi juice</span></span></li>
+              <li><span>Thai Mojito <span class="note">Thai basil, rum, lime, mint, pineapple & chili</span></span></li>
+              <li><span>Cool Passion <span class="note">Vodka, lime, passion fruit juice, mint, simple syrup & soda</span></span></li>
+              <li><span>Smokey Rose <span class="note">Pink gin, lime, cucumber peel, burnt rosemary & tonic</span></span></li>
+              <li><span>No Idea <span class="note">Rum, mixed berries, lime, simple syrup & soda</span></span></li>
+              <li><span>Singapore Sling <span class="note">Cointreau, gin, cherry liquor, pineapple juice, bitters & grenadine</span></span></li>
+              <li><span>Dragon Mango <span class="note">Tequila, mango purée, red chili, lime, simple syrup & salt</span></span></li>
+              <li><span>Rowdy Melon <span class="note">Rum, Grand Maier, Watermelon, lime</span></span></li>
+              <li><span>Bangkok Margarita <span class="note">Tequila, Triple Sec, Basil Leaves, Lemon Grass, Lime, Honey</span></span></li>
+              <li><span>Malibu Barbie <span class="note">Maliburn Cranberry Juice, Grandline, Pineapple</span></span></li>
+              <li><span>The Cool Cucumber <span class="note">Tequila, Cointreau, Lime, Pineapple Cubes, Cucumber</span></span></li>
+              <li><span>Izumi Sour <span class="note">Bourbon, lime, bitters & simple syrup</span></span></li>
+              <li><span>Golden Apple <span class="note">Bourbon, apple, lime, simple syrup, bitters & cinnamon</span></span></li>
+              <li><span>Grassy Lemon <span class="note">Coconut rum, vodka, ginger, simple syrup, fresh lemongrass juice & prosecco</span></span></li>
+              <li><span>Classic Caribbean <span class="note">Rum, malibu, orange, pineapple, ginger & grenadine</span></span></li>
+              <li><span>Tequil Smash <span class="note">Tequila, peach, orange & cranberrya smash</span></span></li>
+              <li><span>Spicy Bourbon <span class="note">Bourbon, aperol, lime, ginger & bitters</span></span></li>
+            </ul>
+          </div>
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Classic Cocktails</h3>
+            <ul class="menu-list">
+              <li><span>Old Fashioned</span><span>32,000/-</span></li>
+              <li><span>Classic Mojito (ask for flavors)</span><span>30,000/-</span></li>
+              <li><span>Classic Margarita (ask for flavors)</span><span>30,000/-</span></li>
+              <li><span>Cosmopolitan</span><span>30,000/-</span></li>
+              <li><span>Espresso Martini</span><span>30,000/-</span></li>
+              <li><span>French 75</span><span>35,000/-</span></li>
+              <li><span>Whisky Sour</span><span>35,000/-</span></li>
+              <li><span>Long Island Tea</span><span>35,000/-</span></li>
+              <li><span>The Spiriz</span><span>35,000/-</span></li>
+              <li><span>Sangaria</span><span>35,000/-</span></li>
+              <li><span>Irish Coffee</span><span>30,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Shooters</h3>
+            <ul class="menu-list">
+              <li><span>Adios M@F@</span><span>15,000/-</span></li>
+              <li><span>Lemon Drop</span><span>15,000/-</span></li>
+              <li><span>B52</span><span>20,000/-</span></li>
+              <li><span>Jäger Bomb</span><span>20,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Spirits — Vodka</h3>
+            <ul class="menu-list">
+              <li><span>Absolut Blue / Flavour</span><span>10,000/-</span></li>
+              <li><span>Stolichnaya / Finlandia</span><span>12,000/-</span></li>
+              <li><span>Ciroc / Ciroc Pineapple</span><span>16,000/-</span></li>
+              <li><span>Grey Goose</span><span>20,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Spirits — Rum</h3>
+            <ul class="menu-list">
+              <li><span>Havana White / Dark</span><span>8,000/-</span></li>
+              <li><span>Captain Spiced Gold</span><span>10,000/-</span></li>
+              <li><span>Malibu</span><span>10,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Spirits — Gin</h3>
+            <ul class="menu-list">
+              <li><span>Uganda Waragi / UG Coconut / UG Pineapple</span><span>8,000/-</span></li>
+              <li><span>UG Ginger Lemon / Gordons / Gordons Pink</span><span>10,000/-</span></li>
+              <li><span>Beefeater / Beefeater Pink</span><span>10,000/-</span></li>
+              <li><span>Bombay Sapphire / Tanquary / Tanquary Sevila</span><span>12,000/-</span></li>
+              <li><span>Malfy Gin Rosa / Originale / Limone</span><span>16,000/-</span></li>
+              <li><span>Tanquary 10</span><span>18,000/-</span></li>
+              <li><span>Hendricks</span><span>20,000/-</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- WINE & SPIRITS -->
+      <div class="menu-section" data-section="wine">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">House Wine</h3>
+            <ul class="menu-list">
+              <li><span>Red (Dry/Sweet)</span><span>20,000/-</span></li>
+              <li><span>White (Dry/Sweet)</span><span>20,000/-</span></li>
+              <li><span>House Rosé</span><span>20,000/-</span></li>
+              <li><span>House Prosecco</span><span>30,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">White Wines (select)</h3>
+            <ul class="menu-list">
+              <li><span>Four Cousins / Rooiberg Natural Sweet</span><span>100,000/-</span></li>
+              <li><span>Excelsior Chardonnay</span><span>110,000/-</span></li>
+              <li><span>Tall Horse Chenin Blanc</span><span>125,000/-</span></li>
+              <li><span>Grand Plantey Bordeux</span><span>145,000/-</span></li>
+              <li><span>Alvis Drift Signature Chenin Blanc</span><span>170,000/-</span></li>
+              <li><span>B&G Chablis</span><span>375,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Red Wine (select)</h3>
+            <ul class="menu-list">
+              <li><span>Four Cousins / Rooiberg Natural Sweet</span><span>100,000/-</span></li>
+              <li><span>Quereu Cabernet Sauvignon / Merlot</span><span>125,000/-</span></li>
+              <li><span>Chateau Saint Martin Bordeaux</span><span>125,000/-</span></li>
+              <li><span>KWV Shiraz</span><span>155,000/-</span></li>
+              <li><span>Aruma Malbec</span><span>210,000/-</span></li>
+              <li><span>Dom Perignon Brut</span><span>1,900,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Sparkling & Champagne</h3>
+            <ul class="menu-list">
+              <li><span>JP Chenet White / Rosé</span><span>135,000/-</span></li>
+              <li><span>KWV Brut</span><span>150,000/-</span></li>
+              <li><span>Moët & Chandon</span><span>550,000/-</span></li>
+              <li><span>Veuve Cliquot Brut / Rosé</span><span>650,000 – 725,000/-</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Whisky</h3>
+            <ul class="menu-list">
+              <li><span>Ballantines / Famous Grouse</span><span>10,000 – 12,000/-</span></li>
+              <li><span>Jameson / Black Label / Jim Beam</span><span>14,000 – 15,000/-</span></li>
+              <li><span>Chivas 12 / Jameson Black Barrel</span><span>16,000/-</span></li>
+              <li><span>Jack Daniels / Honey / Fire</span><span>16,000/-</span></li>
+              <li><span>Double Black Label</span><span>20,000/-</span></li>
+              <li><span>Woodford Reserve</span><span>25,000/-</span></li>
+              <li><span>Gold Label</span><span>30,000/-</span></li>
+              <li><span>Blue Label</span><span>50,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Single Malts</h3>
+            <ul class="menu-list">
+              <li><span>Naked Malt</span><span>18,000/-</span></li>
+              <li><span>Glenlivet Founders / 12yrs</span><span>20,000 – 22,000/-</span></li>
+              <li><span>Glenlivet 15yrs / 18yrs</span><span>30,000 – 40,000/-</span></li>
+              <li><span>Glenfiddich 12 / 15</span><span>20,000 – 30,000/-</span></li>
+              <li><span>Macallan 12 / 15</span><span>25,000 – 45,000/-</span></li>
+              <li><span>Talisker / Lagavulin</span><span>30,000 – 35,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Cognac & Tequila</h3>
+            <ul class="menu-list">
+              <li><span>Hennessy VS / VSOP</span><span>28,000 – 32,000/-</span></li>
+              <li><span>Remy Martin VSOP / Martell VSOP</span><span>30,000 – 32,000/-</span></li>
+              <li><span>Olmeca Gold / Silver</span><span>10,000/-</span></li>
+              <li><span>El Jimador Gold / Silver</span><span>14,000/-</span></li>
+              <li><span>XO Café Patron</span><span>22,000/-</span></li>
+              <li><span>Avion Blanco / Repasado</span><span>25,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Liqueurs</h3>
+            <ul class="menu-list">
+              <li><span>Kahlúa / Amarula</span><span>12,000/-</span></li>
+              <li><span>Baileys / Jägermeister</span><span>14,000/-</span></li>
+              <li><span>Amaretto / Cointreau</span><span>17,000 – 20,000/-</span></li>
+              <li><span>Grand Marnier</span><span>22,000/-</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOFT DRINKS -->
+      <div class="menu-section" data-section="softs">
+        <div class="menu-cols">
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Soft Drinks</h3>
+            <ul class="menu-list">
+              <li><span>Water</span><span>4,000/-</span></li>
+              <li><span>Soda / Tonic Water</span><span>4,000/-</span></li>
+              <li><span>Aquelle Sparkling Water (Sm)</span><span>6,000/-</span></li>
+              <li><span>Diet Soda / Soda Bottle</span><span>5,500 – 6,000/-</span></li>
+              <li><span>Red Bull Energy Drink</span><span>12,000/-</span></li>
+              <li><span>Aquelle Sparkling Water (Big)</span><span>12,000/-</span></li>
+              <li><span>Fresh Juice (check availability)</span><span>15,000/-</span></li>
+              <li><span>Mocktails (of your choice)</span><span>20,000/-</span></li>
+            </ul>
+
+            <h3 class="menu-cat-title">Beer & Ciders</h3>
+            <ul class="menu-list">
+              <li><span>Bell / Club / Nile Special</span><span>10,000/-</span></li>
+              <li><span>Castle Lite / Tusker Lite / Tusker Malt</span><span>10,000/-</span></li>
+              <li><span>Guinness / Smirnoff Ice</span><span>10,000/-</span></li>
+              <li><span>White Cap / Tusker Cider</span><span>12,000/-</span></li>
+              <li><span>Hunters</span><span>14,000/-</span></li>
+              <li><span>Heineken / Desparado / Budwieser</span><span>14,000/-</span></li>
+              <li><span>Stella Artois / Savannah</span><span>14,000/-</span></li>
+            </ul>
+          </div>
+          <div class="menu-col">
+            <h3 class="menu-cat-title">Coffee</h3>
+            <ul class="menu-list">
+              <li><span>Espresso</span><span>12,000/-</span></li>
+              <li><span>Americano</span><span>14,000/-</span></li>
+              <li><span>Café Latte / Cappuccino / Macchiato</span><span>16,000/-</span></li>
+              <li><span>Hot Chocolate</span><span>18,000/-</span></li>
+              <li><span>Iced Latte</span><span>20,000/-</span></li>
+              <li><span>Whipped Ice Coffee</span><span>22,000/-</span></li>
+              <li><span>Thai Iced Coffee</span><span>25,000/-</span></li>
+            </ul>
+            <p class="menu-footnote">Flavoured syrup & milk alternatives available at extra cost — 4,000/-</p>
+
+            <h3 class="menu-cat-title">Tea</h3>
+            <ul class="menu-list">
+              <li><span>Black Tea</span><span>12,000/-</span></li>
+              <li><span>Dawa Tea</span><span>14,000/-</span></li>
+              <li><span>African Tea (Spiced / Non Spiced)</span><span>12,000/-</span></li>
+              <li><span>English Breakfast Tea</span><span>14,000/-</span></li>
+              <li><span>Herbal Tea</span><span>16,000/-</span></li>
+              <li><span>Iced Tea (ask for flavours)</span><span>20,000/-</span></li>
+              <li><span>Thai Iced Tea</span><span>25,000/-</span></li>
+            </ul>
+            <p class="menu-footnote">Mocktails/Shakes are available at 22,000/- (ask for flavours)</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end menu-content -->
+
+    <div class="menu-note reveal">
+      <p>All prices in Ugandan Shillings (UGX). Menu subject to change. Speak to your server about daily specials.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="exp-inner">
+      <p class="section-label reveal">The Experience</p>
+      <h2 class="reveal">More Than a Meal</h2>
+      <div class="exp-cards">
+        <div class="exp-card reveal">
+          <div class="exp-icon">🌿</div>
+          <h3>Terrace Dining</h3>
+          <p>Enjoy al fresco dining on our open terrace. Ideal at sunset — the views over Kololo are unmatched.</p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon">🍸</div>
+          <h3>The Lounge</h3>
+          <p>Unwind after a long day. Our lounge is the perfect setting for cocktails, conversation, and smooth music.</p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon">🎉</div>
+          <h3>Private Events</h3>
+          <p>Hosting a special occasion? We cater to intimate gatherings and celebrations — speak to us about private bookings.</p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon">🕛</div>
+          <h3>Open Daily</h3>
+          <p>Doors open Tuesday to Sunday from noon until late. Walk-ins welcome; reservations recommended at peak hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="section-header">
+      <p class="section-label reveal">Atmosphere</p>
+      <h2 class="reveal">A Glimpse Inside</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item g1"><div class="gallery-placeholder"><span>🍣</span><p>Signature Rolls</p></div></div>
+      <div class="gallery-item g2"><div class="gallery-placeholder"><span>🌿</span><p>Terrace Seating</p></div></div>
+      <div class="gallery-item g3"><div class="gallery-placeholder"><span>🍸</span><p>The Lounge Bar</p></div></div>
+      <div class="gallery-item g4"><div class="gallery-placeholder"><span>🍜</span><p>Thai Cuisine</p></div></div>
+      <div class="gallery-item g5"><div class="gallery-placeholder"><span>✨</span><p>Evening Ambience</p></div></div>
+    </div>
+    <p class="gallery-note reveal">Photos coming soon — follow us on <a href="https://www.facebook.com/izumikla/" target="_blank">Facebook</a> for the latest.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="section-label reveal">Get in Touch</p>
+        <h2 class="reveal">Find Us &<br><em>Make a Reservation</em></h2>
+        <div class="contact-details reveal">
+          <div class="contact-item">
+            <span class="c-icon">📍</span>
+            <div><strong>Address</strong><p>38 Upper Kololo Terrace<br>Kampala, Uganda</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📞</span>
+            <div><strong>Phone</strong><p><a href="tel:+256756244911">+256 756 244 911</a></p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">✉️</span>
+            <div><strong>Email</strong><p><a href="mailto:izumireservations@gmail.com">izumireservations@gmail.com</a></p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">🕐</span>
+            <div><strong>Hours</strong><p>Tuesday – Sunday<br>12:00 PM – 11:00 PM</p></div>
+          </div>
+        </div>
+        <div class="social-links reveal">
+          <a href="https://www.facebook.com/izumikla/" target="_blank" class="social-btn">Facebook</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form id="reservationForm" class="reservation-form">
+          <h3>Reserve a Table</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+256 700 000 000" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="time" id="time" min="12:00" max="22:00" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests">
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option selected>3–4 Guests</option>
+              <option>5–6 Guests</option>
+              <option>7+ Guests (Private Event)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" rows="3" placeholder="Dietary requirements, special occasions..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Confirm Reservation</button>
+          <p class="form-note">We'll confirm your booking via phone within 2 hours.</p>
+        </form>
+        <div id="formSuccess" class="form-success" style="display:none;">
+          <span>🎉</span>
+          <h3>Reservation Received!</h3>
+          <p>Thank you. We'll call you at the number provided to confirm your table.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <svg class="footer-logo-svg" viewBox="0 0 200 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.6">
+          <line x1="100" y1="58" x2="100" y2="6" stroke="#c9a96e" stroke-width="2"/>
+          <line x1="88"  y1="58" x2="88"  y2="14" stroke="#c9a96e" stroke-width="1.8"/>
+          <line x1="112" y1="58" x2="112" y2="14" stroke="#c9a96e" stroke-width="1.8"/>
+          <line x1="76"  y1="58" x2="76"  y2="22" stroke="#c9a96e" stroke-width="1.5"/>
+          <line x1="124" y1="58" x2="124" y2="22" stroke="#c9a96e" stroke-width="1.5"/>
+          <line x1="64"  y1="58" x2="64"  y2="32" stroke="#c9a96e" stroke-width="1.3"/>
+          <line x1="136" y1="58" x2="136" y2="32" stroke="#c9a96e" stroke-width="1.3"/>
+          <line x1="52"  y1="58" x2="52"  y2="42" stroke="#c9a96e" stroke-width="1"/>
+          <line x1="148" y1="58" x2="148" y2="42" stroke="#c9a96e" stroke-width="1"/>
+        </g>
+        <line x1="44" y1="60" x2="156" y2="60" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+        <text x="100" y="76" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="14" font-weight="500" letter-spacing="8" fill="#c9a96e">IZUMI</text>
+        <text x="100" y="87" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="6" font-weight="300" letter-spacing="3.5" fill="#7a6340">RESTAURANT &amp; LOUNGE</text>
+      </svg>
+      <p class="footer-tagline">Uganda's only Pan-Asian Restaurant & Lounge</p>
+      <p class="footer-addr">38 Upper Kololo Terrace, Kampala · +256 756 244 911</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Reservations</a>
+        <a href="https://www.facebook.com/izumikla/" target="_blank">Facebook</a>
+      </div>
+      <p class="footer-copy">© 2025 Izumi Restaurant & Lounge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
